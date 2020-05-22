@@ -44,9 +44,100 @@
                 </exclusion>
             </exclusions>
         </dependency>
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
+            <version>7.0</version>
+        </dependency>
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>2.9.9</version>
+        </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.16</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.9</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.12</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.12</version>
+        </dependency>
+        <dependency>
+            <!-- Kjernefunksjonaliteten til Hibernate -->
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>5.0.10.Final</version>
+            <scope>provided</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>dom4j</groupId>
+                    <artifactId>dom4j</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>5.2.4.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>27.0.1-jre</version>
+        </dependency>
+        <dependency>
+            <!-- Collections-verktøy. Burde muligens oppgraderes til versjon 4 -->
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+            <version>3.2.2</version>
+        </dependency>
+        <dependency>
+            <!-- Verktøy for håndtering av streams  -->
+            <groupId>com.codepoetics</groupId>
+            <artifactId>protonpack</artifactId>
+            <version>1.14</version>
+        </dependency>
+        <dependency>
+            <!-- Enhetstestrammeverk -->
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.11</version>
+            <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>junit</groupId>
+                    <artifactId>junit</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <!-- Java-implementasjon av krypto-algoritmer -->
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bcprov-jdk15on</artifactId>
+            <version>1.60</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.owasp.antisamy</groupId>
+            <artifactId>antisamy</artifactId>
+            <version>1.5.7</version>
+        </dependency>
     </dependencies>
 
     <build>
+        <sourceDirectory>src/main/java, src-copied-stuff, src-mocked-out, eva-admin-hibernate-files/admin-backend-common/src/main/, eva-admin-hibernate-files/admin-backend/src/main/, eva-admin-hibernate-files/admin-backend-testtools/src/main/, eva-admin-hibernate-files/admin-common/src/main/, eva-admin-hibernate-files/admin-configuration/src/main/, eva-admin-hibernate-files/admin-counting/src/main/, eva-admin-hibernate-files/admin-frontend/src/main/, eva-admin-hibernate-files/admin-rapport/src/main/, eva-admin-hibernate-files/admin-rbac/src/main/, eva-admin-hibernate-files/admin-settlement/src/main/, eva-admin-hibernate-files/admin-valgnatt/src/main/, eva-admin-hibernate-files/admin-voting/src/main/</sourceDirectory>
 
         <plugins>
             <plugin>
