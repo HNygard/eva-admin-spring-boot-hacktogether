@@ -45,14 +45,22 @@
             </exclusions>
         </dependency>
         <dependency>
+            <!-- Java EE 8 spesifikasjons-API -->
             <groupId>javax</groupId>
             <artifactId>javaee-api</artifactId>
             <version>7.0</version>
         </dependency>
         <dependency>
+            <!-- Dato-bibliotek. Ble brukt fordi pre-java-8-biblioteket ikke var bra. Kan byttes tilbake til nytt bibliotek i Java nå -->
             <groupId>joda-time</groupId>
             <artifactId>joda-time</artifactId>
             <version>2.9.9</version>
+        </dependency>
+        <dependency>
+            <!-- JBoss EJB3 api for Bean Providers -->
+            <groupId>org.jboss.ejb3</groupId>
+            <artifactId>jboss-ejb3-ext-api</artifactId>
+            <version>2.2.0.Final</version>
         </dependency>
         <dependency>
             <groupId>log4j</groupId>
@@ -60,19 +68,15 @@
             <version>1.2.16</version>
         </dependency>
         <dependency>
+            <!-- Hjelpeklasser for java.lang -->
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
-            <version>3.9</version>
+            <version>3.6</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.12</version>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.12</version>
+            <version>1.18.4</version>
         </dependency>
         <dependency>
             <!-- Kjernefunksjonaliteten til Hibernate -->
@@ -88,9 +92,47 @@
             </exclusions>
         </dependency>
         <dependency>
+            <!-- Hibernates implementasjon av JPA. Skal fjernes når vi oppgraderer til Hibernate 5.2+ -->
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>5.0.10.Final</version>
+            <scope>provided</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-api</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>xml-apis</groupId>
+                    <artifactId>xml-apis</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.hibernate.javax.persistence</groupId>
+                    <artifactId>hibernate-jpa-2.1-api</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>dom4j</groupId>
+                    <artifactId>dom4j</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <!-- Verktøy til Hibernate. Brukes ikke i selve admin-applikasjonen, men i admin-tools -->
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-tools</artifactId>
+            <version>5.0.6.Final</version>
+        </dependency>
+        <dependency>
+            <!-- Hibernates implementasjon av Bean Validation -->
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-validator</artifactId>
             <version>5.2.4.Final</version>
+        </dependency>
+        <dependency>
+            <!-- Hibernate-support for joda time. Kan sannsynligvis fjernes når vi slutter å bruke joda time -->
+            <groupId>org.jadira.usertype</groupId>
+            <artifactId>usertype.core</artifactId>
+            <version>5.0.0.GA</version> <!-- Venter med nyere versjon til vi går til Hibernate 5.2 -->
         </dependency>
         <dependency>
             <groupId>com.google.guava</groupId>
@@ -134,6 +176,22 @@
             <artifactId>antisamy</artifactId>
             <version>1.5.7</version>
         </dependency>
+
+
+
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
+
+
     </dependencies>
 
     <build>
