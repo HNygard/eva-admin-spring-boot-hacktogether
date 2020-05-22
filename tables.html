@@ -1,0 +1,2611 @@
+<div id="output">
+    SELECT * from INFORMATION_SCHEMA.TABLES WHERE table_schema != 'INFORMATION_SCHEMA';<br>
+    <table cellspacing="0" cellpadding="0">
+        <tbody>
+        <tr>
+            <th><a href="#" style="text-decoration: none;" class="sortHeader" onclick="resortTable(this);">TABLE_CATALOG<span
+                    class="sortArrow">&nbsp;&nbsp;</span></a></th>
+            <th><a href="#" style="text-decoration: none;" class="sortHeader"
+                   onclick="resortTable(this);">TABLE_SCHEMA<span class="sortArrow">&nbsp;&nbsp;</span></a></th>
+            <th><a href="#" style="text-decoration: none;" class="sortHeader"
+                   onclick="resortTable(this);">TABLE_NAME<span class="sortArrow">&nbsp;&nbsp;</span></a></th>
+            <th><a href="#" style="text-decoration: none;" class="sortHeader"
+                   onclick="resortTable(this);">TABLE_TYPE<span class="sortArrow">&nbsp;&nbsp;</span></a></th>
+            <th><a href="#" style="text-decoration: none;" class="sortHeader"
+                   onclick="resortTable(this);">STORAGE_TYPE<span class="sortArrow">&nbsp;&nbsp;</span></a></th>
+            <th><a href="#" style="text-decoration: none;" class="sortHeader" onclick="resortTable(this);">SQL<span
+                    class="sortArrow">&nbsp;&nbsp;</span></a></th>
+            <th><a href="#" style="text-decoration: none;" class="sortHeader" onclick="resortTable(this);">REMARKS<span
+                    class="sortArrow">&nbsp;&nbsp;</span></a></th>
+            <th><a href="#" style="text-decoration: none;" class="sortHeader" onclick="resortTable(this);">LAST_MODIFICATION<span
+                    class="sortArrow">&nbsp;&nbsp;</span></a></th>
+            <th><a href="#" style="text-decoration: none;" class="sortHeader" onclick="resortTable(this);">ID<span
+                    class="sortArrow">&nbsp;&nbsp;</span></a></th>
+            <th><a href="#" style="text-decoration: none;" class="sortHeader"
+                   onclick="resortTable(this);">TYPE_NAME<span class="sortArrow">&nbsp;&nbsp;</span></a></th>
+            <th><a href="#" style="text-decoration: none;" class="sortHeader"
+                   onclick="resortTable(this);">TABLE_CLASS<span class="sortArrow">&nbsp;&nbsp;</span></a></th>
+            <th><a href="#" style="text-decoration: none;" class="sortHeader" onclick="resortTable(this);">ROW_COUNT_ESTIMATE<span
+                    class="sortArrow">&nbsp;&nbsp;</span></a></th>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>OPENING_HOURS</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."OPENING_HOURS"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"OPENING_HOURS_PK" BIGINT
+                DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_E54C812F_4E08_4640_A229_FAA23A651F31" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_E54C812F_4E08_4640_A229_FAA23A651F31",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"END_TIME"
+                TIME NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"START_TIME" TIME NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_DAY_PK"
+                BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"POLLING_PLACE_PK" BIGINT<br>)
+            </td>
+            <td></td>
+            <td>2011</td>
+            <td>288</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>POLLING_STATION</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."POLLING_STATION"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"POLLING_STATION_PK" BIGINT
+                DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_D6B69014_33A3_4152_9F78_CC944B5A8813" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_D6B69014_33A3_4152_9F78_CC944B5A8813",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"POLLING_STATION_FIRST"
+                VARCHAR(2),<br>&nbsp;&nbsp;&nbsp;&nbsp;"POLLING_STATION_ID" VARCHAR(2) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"POLLING_STATION_LAST"
+                VARCHAR(2),<br>&nbsp;&nbsp;&nbsp;&nbsp;"POLLING_PLACE_PK" BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>2071</td>
+            <td>323</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>VOTE_CATEGORY</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."VOTE_CATEGORY"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTE_CATEGORY_PK" BIGINT
+                DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_98696A58_2D2D_4A9C_9C45_85A103D8EF9E" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_98696A58_2D2D_4A9C_9C45_85A103D8EF9E",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTE_CATEGORY_ID"
+                VARCHAR(12) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTE_CATEGORY_NAME" VARCHAR(50) NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1404</td>
+            <td>407</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>BALLOT_STATUS</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."BALLOT_STATUS"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"BALLOT_STATUS_PK" BIGINT
+                DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_E3121936_9CDE_409F_8332_9ED3CD997052" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_E3121936_9CDE_409F_8332_9ED3CD997052",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"BALLOT_STATUS_ID"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"BALLOT_STATUS_NAME" VARCHAR(50) NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>979</td>
+            <td>41</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>CANDIDATE</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."CANDIDATE"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"CANDIDATE_PK" BIGINT DEFAULT NEXT
+                VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_72FCD2F2_5415_4670_8842_35D88EB5F00E" NOT NULL NULL_TO_DEFAULT
+                SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_72FCD2F2_5415_4670_8842_35D88EB5F00E",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ADDRESS_LINE1"
+                VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ADDRESS_LINE2" VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ADDRESS_LINE3"
+                VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"APPROVED" BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"BASELINE_VOTES"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"DATE_OF_BIRTH" DATE,<br>&nbsp;&nbsp;&nbsp;&nbsp;"DISPLAY_ORDER"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"EMAIL" VARCHAR(129),<br>&nbsp;&nbsp;&nbsp;&nbsp;"FIRST_NAME"
+                VARCHAR(50) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CANDIDATE_ID" VARCHAR(11) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"INFO_TEXT"
+                VARCHAR(150),<br>&nbsp;&nbsp;&nbsp;&nbsp;"LAST_NAME" VARCHAR(50) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MIDDLE_NAME"
+                VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"NAME_LINE" VARCHAR(152) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"POST_TOWN"
+                VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"POSTAL_CODE" VARCHAR(4),<br>&nbsp;&nbsp;&nbsp;&nbsp;"PROFESSION"
+                VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"RESIDENCE" VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"TELEPHONE_NUMBER"
+                VARCHAR(35),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AFFILIATION_PK" BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"BALLOT_PK"
+                BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MARITAL_STATUS_PK" BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1564</td>
+            <td>61</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>CONTEST_REPORT</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."CONTEST_REPORT"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONTEST_REPORT_PK" BIGINT
+                DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_3C63F4FA_1DF8_456E_B932_A6166BAED524" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_3C63F4FA_1DF8_456E_B932_A6166BAED524",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONTEST_PK"
+                BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"REPORTING_UNIT_PK" BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1689</td>
+            <td>115</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>PROPOSER</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."PROPOSER"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"PROPOSER_PK" BIGINT DEFAULT NEXT
+                VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_0CB1E8C8_D513_46E7_8E6E_4575A6E75773" NOT NULL NULL_TO_DEFAULT
+                SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_0CB1E8C8_D513_46E7_8E6E_4575A6E75773",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ADDRESS_LINE1"
+                VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ADDRESS_LINE2" VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ADDRESS_LINE3"
+                VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"APPROVED" BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"DATE_OF_BIRTH"
+                DATE,<br>&nbsp;&nbsp;&nbsp;&nbsp;"DISPLAY_ORDER" INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"EMAIL"
+                VARCHAR(129),<br>&nbsp;&nbsp;&nbsp;&nbsp;"FIRST_NAME" VARCHAR(50) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"PROPOSER_ID"
+                VARCHAR(11) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"LAST_NAME" VARCHAR(50) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MIDDLE_NAME"
+                VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"NAME_LINE" VARCHAR(152) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"POST_TOWN"
+                VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"POSTAL_CODE" VARCHAR(4),<br>&nbsp;&nbsp;&nbsp;&nbsp;"TELEPHONE_NUMBER"
+                VARCHAR(35),<br>&nbsp;&nbsp;&nbsp;&nbsp;"BALLOT_PK" BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"PROPOSER_ROLE_PK"
+                BIGINT<br>)
+            </td>
+            <td></td>
+            <td>2081</td>
+            <td>327</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>VOTE_COUNT_STATUS</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."VOTE_COUNT_STATUS"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTE_COUNT_STATUS_PK"
+                BIGINT DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_582E475C_1388_4E1B_9B86_752EDF78D77B" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_582E475C_1388_4E1B_9B86_752EDF78D77B",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTE_COUNT_STATUS_ID"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTE_COUNT_STATUS_NAME" VARCHAR(50) NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1419</td>
+            <td>419</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>AREA_LEVEL</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."AREA_LEVEL"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"AREA_LEVEL_PK" BIGINT DEFAULT
+                NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_84B8512C_20EB_49E3_915E_B95F78A53683" NOT NULL NULL_TO_DEFAULT
+                SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_84B8512C_20EB_49E3_915E_B95F78A53683",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AREA_LEVEL_ID"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AREA_LEVEL_NAME" VARCHAR(50) NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>954</td>
+            <td>25</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>ELECTION_EVENT_STATUS</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."ELECTION_EVENT_STATUS"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_EVENT_STATUS_PK"
+                BIGINT DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_18667362_1418_4F8D_8123_AE100BB70AF0" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_18667362_1418_4F8D_8123_AE100BB70AF0",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_EVENT_STATUS_ID"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_EVENT_STATUS_NAME" VARCHAR(50) NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1129</td>
+            <td>173</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>VOTER_IMPORT_BATCH</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."VOTER_IMPORT_BATCH"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTER_IMPORT_BATCH_PK"
+                BIGINT DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_CF9DFCD6_164C_48C6_9CFC_72CA3D993C4C" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_CF9DFCD6_164C_48C6_9CFC_72CA3D993C4C",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"LAST_IMPORT_BATCH_NUMBER"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"LAST_IMPORT_END" TIMESTAMP NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"LAST_IMPORT_RECORDS_DELETE"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"LAST_IMPORT_RECORDS_INSERT" INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"LAST_IMPORT_RECORDS_SKIP"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"LAST_IMPORT_RECORDS_TOTAL" INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"LAST_IMPORT_RECORDS_UPDATE"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"LAST_IMPORT_START" TIMESTAMP NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_EVENT_PK"
+                BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>2272</td>
+            <td>430</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>CONTEST_AREA</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."CONTEST_AREA"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONTEST_AREA_PK" BIGINT DEFAULT
+                NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_926A3F29_1D8C_42CE_AA3C_0E70D31EFCC1" NOT NULL NULL_TO_DEFAULT
+                SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_926A3F29_1D8C_42CE_AA3C_0E70D31EFCC1",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CHILD_AREA"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"PARENT_AREA" BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONTEST_PK"
+                BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MV_AREA_PK" BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1679</td>
+            <td>108</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>CONTEST_REPORT_TEXT</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."CONTEST_REPORT_TEXT"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONTEST_REPORT_TEXT_PK"
+                BIGINT DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_E670BCA4_35D7_4EF4_825D_D791BA4A9E25" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_E670BCA4_35D7_4EF4_825D_D791BA4A9E25",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONTEST_REPORT_TEXT"
+                VARCHAR(150) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONTEST_REPORT_TEXT_NAME" VARCHAR(50) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONTEST_REPORT_PK"
+                BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1694</td>
+            <td>119</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>ROLE_AREA_LEVEL</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."ROLE_AREA_LEVEL"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"ROLE_AREA_LEVEL_PK" BIGINT
+                DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_6BDCB834_FFEA_48DC_987A_6EB9F5B50EE4" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_6BDCB834_FFEA_48DC_987A_6EB9F5B50EE4",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"POLLING_PLACE_TYPE"
+                VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AREA_LEVEL_PK" BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ROLE_PK"
+                BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>2151</td>
+            <td>367</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>VALGNATTRAPPORT</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."VALGNATTRAPPORT"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"VALGNATTRAPPORT_PK" BIGINT
+                DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_DFD6925E_D9E9_4D29_93E6_2301B313AA28" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_DFD6925E_D9E9_4D29_93E6_2301B313AA28",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"JSON_CONTENT"
+                VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"REPORT_TYPE" VARCHAR(30),<br>&nbsp;&nbsp;&nbsp;&nbsp;"STATUS"
+                VARCHAR(8) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONTEST_PK" BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_PK"
+                BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MUNICIPALITY_PK" BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MV_AREA_PK"
+                BIGINT<br>)
+            </td>
+            <td></td>
+            <td>2219</td>
+            <td>403</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>ELECTION_DAY</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."ELECTION_DAY"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_DAY_PK" BIGINT DEFAULT
+                NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_F9293368_8C74_4AA4_A584_40CA2F4620EE" NOT NULL NULL_TO_DEFAULT
+                SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_F9293368_8C74_4AA4_A584_40CA2F4620EE",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_DAY_DATE"
+                DATE NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_DAY_END_TIME" TIME NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_DAY_START_TIME"
+                TIME NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_EVENT_PK" BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1737</td>
+            <td>158</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>ELECTION_VOTE_COUNT_CATEGORY</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."ELECTION_VOTE_COUNT_CATEGORY"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_VOTE_COUNT_CATEGORY_PK"
+                BIGINT DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_2CD41515_6074_427A_936B_7702CFA0367A" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_2CD41515_6074_427A_936B_7702CFA0367A",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CENTRAL_PRELIMINARY_COUNT"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"POLLING_DISTRICT_COUNT" BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"SPECIAL_COVER"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNT_CATEGORY_EDITABLE" BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNT_CATEGORY_ENABLED"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"TECHNICAL_POLLING_DISTRICT_COUNT_CONFIGURABLE" BOOLEAN NOT
+                NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_GROUP_PK" BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTE_COUNT_CATEGORY_PK"
+                BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1827</td>
+            <td>209</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>ANTALL_STEMMESEDLER_LAGT_TIL_SIDE</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."ANTALL_STEMMESEDLER_LAGT_TIL_SIDE"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"ANTALL_STEMMESEDLER_LAGT_TIL_SIDE_PK"
+                BIGINT DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_73C7A240_EF2C_4503_91EE_AD128F46ECFC" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_73C7A240_EF2C_4503_91EE_AD128F46ECFC",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ANTALL_STEMMESEDLER"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONTEST_PK" BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_GROUP_PK"
+                BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MUNICIPALITY_PK" BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1489</td>
+            <td>21</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>ELECTION_SETTLEMENT</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."ELECTION_SETTLEMENT"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_SETTLEMENT_PK"
+                BIGINT DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_F0EF6910_BCE5_48B9_AAB1_E0E2F04F9D81" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_F0EF6910_BCE5_48B9_AAB1_E0E2F04F9D81",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"SETTLEMENT_NUMBER"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"LEVELING_SEAT_SETTLEMENT_PK" BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1802</td>
+            <td>193</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>TEXT_ID</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."TEXT_ID"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"TEXT_ID_PK" BIGINT DEFAULT NEXT
+                VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_5FBF9BCC_7933_4092_AD07_2032B548D623" NOT NULL NULL_TO_DEFAULT
+                SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_5FBF9BCC_7933_4092_AD07_2032B548D623",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"INFO_TEXT"
+                VARCHAR(150),<br>&nbsp;&nbsp;&nbsp;&nbsp;"TEXT_ID" VARCHAR(100) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_EVENT_PK"
+                BIGINT<br>)
+            </td>
+            <td></td>
+            <td>2199</td>
+            <td>399</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>CONFIGURATION</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."CONFIGURATION"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONFIGURATION_PK" BIGINT
+                DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_96BF7460_1DF5_4CE4_8FC8_0B32879F9359" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_96BF7460_1DF5_4CE4_8FC8_0B32879F9359",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VERSION_ID"
+                VARCHAR(10) NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1054</td>
+            <td>100</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>MUNICIPALITY_STATUS</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."MUNICIPALITY_STATUS"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"MUNICIPALITY_STATUS_PK"
+                BIGINT DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_77C1FC78_0456_4F4B_92E5_589D39974BEB" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_77C1FC78_0456_4F4B_92E5_589D39974BEB",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MUNICIPALITY_STATUS_ID"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MUNICIPALITY_STATUS_NAME" VARCHAR(50) NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1249</td>
+            <td>272</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>MV_AREA</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."MV_AREA"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"MV_AREA_PK" BIGINT DEFAULT NEXT
+                VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_01D59552_8040_41CB_AAB2_3E5B992163C8" NOT NULL NULL_TO_DEFAULT
+                SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_01D59552_8040_41CB_AAB2_3E5B992163C8",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AREA_LEVEL"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AREA_PATH" VARCHAR(37) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"BOROUGH_NAME"
+                VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNTRY_NAME" VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNTY_NAME"
+                VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_EVENT_NAME" VARCHAR(50) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MUNICIPALITY_NAME"
+                VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"POLLING_DISTRICT_NAME" VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"POLLING_PLACE_NAME"
+                VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"POLLING_STATION_FIRST" VARCHAR(2),<br>&nbsp;&nbsp;&nbsp;&nbsp;"POLLING_STATION_LAST"
+                VARCHAR(2),<br>&nbsp;&nbsp;&nbsp;&nbsp;"BOROUGH_ID" VARCHAR(6),<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNTRY_ID"
+                VARCHAR(2),<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNTY_ID" VARCHAR(2),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_EVENT_ID"
+                VARCHAR(6) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MUNICIPALITY_ID" VARCHAR(4),<br>&nbsp;&nbsp;&nbsp;&nbsp;"PARENT_POLLING_DISTRICT"
+                BOOLEAN,<br>&nbsp;&nbsp;&nbsp;&nbsp;"POLLING_DISTRICT_ID" VARCHAR(4),<br>&nbsp;&nbsp;&nbsp;&nbsp;"POLLING_PLACE_ID"
+                VARCHAR(4),<br>&nbsp;&nbsp;&nbsp;&nbsp;"BOROUGH_PK" BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MUNICIPALITY_PK"
+                BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"POLLING_DISTRICT_PK" BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"POLLING_PLACE_PK"
+                BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNTRY_PK" BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNTY_PK"
+                BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_EVENT_PK" BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"PARENT_POLLING_DISTRICT_PK"
+                BIGINT<br>)
+            </td>
+            <td></td>
+            <td>1971</td>
+            <td>276</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>MUNICIPALITY_OPENING_HOUR</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."MUNICIPALITY_OPENING_HOUR"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"MUNICIPALITY_OPENING_HOUR_PK"
+                BIGINT DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_72DB254F_361F_4984_A22F_5BB6A671E40A" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_72DB254F_361F_4984_A22F_5BB6A671E40A",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"END_TIME"
+                TIME NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"START_TIME" TIME NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_DAY_PK"
+                BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MUNICIPALITY_PK" BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1931</td>
+            <td>268</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>PARTY</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."PARTY"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"PARTY_PK" BIGINT DEFAULT NEXT VALUE
+                FOR "PUBLIC"."SYSTEM_SEQUENCE_E86133E5_05B8_4B43_B9EC_65A4826D72F6" NOT NULL NULL_TO_DEFAULT SEQUENCE
+                "PUBLIC"."SYSTEM_SEQUENCE_E86133E5_05B8_4B43_B9EC_65A4826D72F6",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"APPROVED"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"BLANK" BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"FORENKLET_BEHANDLING"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"PARTY_ID" VARCHAR(8) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"PARTY_NAME"
+                VARCHAR(50) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"SHORT_CODE" INTEGER,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_EVENT_PK"
+                BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"PARTY_CATEGORY_PK" BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>2046</td>
+            <td>300</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>MUNICIPALITY_LOCAL_CONFIG_STATUS</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."MUNICIPALITY_LOCAL_CONFIG_STATUS"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"MUNICIPALITY_LOCAL_CONFIG_STATUS_PK"
+                BIGINT DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_711F7C0A_6C96_4ABA_BB4D_36243E91BC4C" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_711F7C0A_6C96_4ABA_BB4D_36243E91BC4C",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ADVANCE_POLLING_PLACES"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNT_CATEGORIES" BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_CARD"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_POLLING_PLACES" BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTRONIC_MARKOFFS"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"LANGUAGE" BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"LIST_PROPOSALS"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"POLLING_DISTRICTS" BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"POLLING_STATIONS"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"REPORTING_UNIT_STEMMESTYRE" BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"REPORTING_UNIT_VALGSTYRE"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"SCANNING" BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"TECH_POLLING_DISTRICTS"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MUNICIPALITY_PK" BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1921</td>
+            <td>264</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>VOTE_COUNT_CATEGORY</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."VOTE_COUNT_CATEGORY"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTE_COUNT_CATEGORY_PK"
+                BIGINT DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_2F482D4C_2649_4451_8819_685D8652C44D" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_2F482D4C_2649_4451_8819_685D8652C44D",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"EARLY_VOTING"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTE_COUNT_CATEGORY_ID" VARCHAR(4) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MANDATORY_CENTRAL_COUNT"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MANDATORY_COUNT" BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MANDATORY_TOTAL_COUNT"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTE_COUNT_CATEGORY_NAME" VARCHAR(50) NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1414</td>
+            <td>415</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>REPORTING_UNIT</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."REPORTING_UNIT"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"REPORTING_UNIT_PK" BIGINT
+                DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_93D6288A_E041_4020_8D36_7DDF34A42E80" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_93D6288A_E041_4020_8D36_7DDF34A42E80",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ADDRESS_LINE1"
+                VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ADDRESS_LINE2" VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ADDRESS_LINE3"
+                VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"EMAIL" VARCHAR(129),<br>&nbsp;&nbsp;&nbsp;&nbsp;"NAME_LINE"
+                VARCHAR(50) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"POST_TOWN" VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"POSTAL_CODE"
+                VARCHAR(4),<br>&nbsp;&nbsp;&nbsp;&nbsp;"TELEPHONE_NUMBER" VARCHAR(35),<br>&nbsp;&nbsp;&nbsp;&nbsp;"MV_AREA_PK"
+                BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MV_ELECTION_PK" BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"REPORTING_UNIT_TYPE_PK"
+                BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>2116</td>
+            <td>343</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>CANDIDATE_SEAT</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."CANDIDATE_SEAT"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"CANDIDATE_SEAT_PK" BIGINT
+                DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_4B97A3FF_00B1_4536_B8FB_98A5BC7DBBB1" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_4B97A3FF_00B1_4536_B8FB_98A5BC7DBBB1",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"DIVIDEND"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"DIVISOR" DECIMAL(5, 0) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTED"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"QUOTIENT" DECIMAL(14, 0) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"SEAT_NUMBER"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AFFILIATION_PK" BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CANDIDATE_PK"
+                BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"SETTLEMENT_PK" BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1594</td>
+            <td>72</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>POLLING_PLACE_VOTING</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."POLLING_PLACE_VOTING"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"EARLY_VOTING" BOOLEAN
+                NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"POLLING_PLACE_PK" BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AREA_LEVEL"
+                INTEGER,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AREA_PATH" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"BOROUGH_ID"
+                VARCHAR(6),<br>&nbsp;&nbsp;&nbsp;&nbsp;"BOROUGH_NAME" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"BOROUGH_PK"
+                BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNTRY_ID" VARCHAR(2),<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNTRY_NAME"
+                VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNTRY_PK" BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNTY_ID"
+                VARCHAR(2),<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNTY_NAME" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNTY_PK"
+                BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_EVENT_PK" BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MUNICIPALITY_ID"
+                VARCHAR(4),<br>&nbsp;&nbsp;&nbsp;&nbsp;"MUNICIPALITY_NAME" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"MUNICIPALITY_PK"
+                BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"POLLING_DISTRICT_ID" VARCHAR(4),<br>&nbsp;&nbsp;&nbsp;&nbsp;"POLLING_DISTRICT_NAME"
+                VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"POLLING_DISTRICT_PK" BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"POLLING_PLACE_ID"
+                VARCHAR(4),<br>&nbsp;&nbsp;&nbsp;&nbsp;"POLLING_PLACE_NAME" VARCHAR(255)<br>)
+            </td>
+            <td></td>
+            <td>672</td>
+            <td>320</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>VOTER</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."VOTER"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTER_PK" BIGINT DEFAULT NEXT VALUE
+                FOR "PUBLIC"."SYSTEM_SEQUENCE_EE2145BC_5BE0_463A_9AB9_30BD6261174D" NOT NULL NULL_TO_DEFAULT SEQUENCE
+                "PUBLIC"."SYSTEM_SEQUENCE_EE2145BC_5BE0_463A_9AB9_30BD6261174D",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AARSAKSKODE"
+                VARCHAR(2),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ADDITIONAL_INFORMATION" VARCHAR(200),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ADDRESS_LINE1"
+                VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ADDRESS_LINE2" VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ADDRESS_LINE3"
+                VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"APPROVAL_REQUEST" VARCHAR(150),<br>&nbsp;&nbsp;&nbsp;&nbsp;"APPROVED"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"BOROUGH_ID" VARCHAR(6) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNTRY_ID"
+                VARCHAR(2) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNTY_ID" VARCHAR(2) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"DATE_OF_BIRTH"
+                DATE,<br>&nbsp;&nbsp;&nbsp;&nbsp;"DATE_TIME_SUBMITTED" TIMESTAMP NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTORAL_ROLL_LINE"
+                INTEGER,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTORAL_ROLL_PAGE" INTEGER,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELIGIBLE"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"EMAIL" VARCHAR(129),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ENDRINGSTYPE"
+                CHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"FICTITIOUS" BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"FIRST_NAME"
+                VARCHAR(50) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTER_ID" VARCHAR(11) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"IMPORT_BATCH_NUMBER"
+                INTEGER,<br>&nbsp;&nbsp;&nbsp;&nbsp;"LAST_NAME" VARCHAR(50) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MAILING_ADDRESS_LINE1"
+                VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"MAILING_ADDRESS_LINE2" VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"MAILING_ADDRESS_LINE3"
+                VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"MAILING_ADDRESS_SPECIFIED" BOOLEAN,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MAILING_COUNTRY_CODE"
+                VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"MIDDLE_NAME" VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"MUNICIPALITY_ID"
+                VARCHAR(4) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"NAME_LINE" VARCHAR(152) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTER_NUMBER"
+                BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"POLLING_DISTRICT_ID" VARCHAR(4) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"POST_TOWN"
+                VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"POSTAL_CODE" VARCHAR(4),<br>&nbsp;&nbsp;&nbsp;&nbsp;"REG_DATO"
+                DATE,<br>&nbsp;&nbsp;&nbsp;&nbsp;"SPES_REG_TYPE" CHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"STATUSKODE"
+                CHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"TELEPHONE_NUMBER" VARCHAR(35),<br>&nbsp;&nbsp;&nbsp;&nbsp;"TEMPORARY_CREDENTIALS_COUNT"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"TEMPORARY_CREDENTIALS_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTING_CARD_RETURNED"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_EVENT_PK" BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MV_AREA_PK"
+                BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"POLLING_STATION_PK" BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"TEMPORARY_CREDENTIALS_POLLING_PLACE_PK"
+                BIGINT<br>)
+            </td>
+            <td></td>
+            <td>2269</td>
+            <td>423</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>CONTEST_REL_AREA</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."CONTEST_REL_AREA"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"MV_AREA_PK" BIGINT NOT
+                NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MV_ELECTION_PK" BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AREA_LEVEL"
+                INTEGER,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AREA_PATH" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"BOROUGH_NAME"
+                VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONTEST_AREA_LEVEL" INTEGER,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONTEST_NAME"
+                VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONTEST_PK" BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNTRY_NAME"
+                VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNTY_NAME" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_EVENT_PK"
+                BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_GROUP_NAME" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_GROUP_PK"
+                BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_NAME" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_PATH"
+                VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_PK" BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MUNICIPALITY_NAME"
+                VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"POLLING_DISTRICT_NAME" VARCHAR(255)<br>)
+            </td>
+            <td></td>
+            <td>252</td>
+            <td>112</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>PARTY_CATEGORY</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."PARTY_CATEGORY"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"PARTY_CATEGORY_PK" BIGINT
+                DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_40707CB5_0534_41CA_888F_098E61BD3658" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_40707CB5_0534_41CA_888F_098E61BD3658",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"PARTY_CATEGORY_ID"
+                VARCHAR(2) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"PARTY_CATEGORY_NAME" VARCHAR(50) NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1294</td>
+            <td>304</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>ROLE</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."ROLE"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"ROLE_PK" BIGINT DEFAULT NEXT VALUE FOR
+                "PUBLIC"."SYSTEM_SEQUENCE_8B7AB4B1_7DB9_4153_BF97_1A00675D92DF" NOT NULL NULL_TO_DEFAULT SEQUENCE
+                "PUBLIC"."SYSTEM_SEQUENCE_8B7AB4B1_7DB9_4153_BF97_1A00675D92DF",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ACTIVE"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CHECK_CANDIDATE_CONFLICTS" BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_LEVEL"
+                VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ROLE_ID" VARCHAR(255) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MUTUALLY_EXCLUSIVE"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ROLE_NAME" VARCHAR(50) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"SECURITY_LEVEL"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"IS_USER_SUPPORT" BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_EVENT_PK"
+                BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>2131</td>
+            <td>359</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>SCANNING_CONFIG</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."SCANNING_CONFIG"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"SCANNING_CONFIG_PK" BIGINT
+                DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_5E4C5DEF_02F4_4CC1_ACD3_1DE104EB4CEC" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_5E4C5DEF_02F4_4CC1_ACD3_1DE104EB4CEC",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"COLLABORATION"
+                BOOLEAN,<br>&nbsp;&nbsp;&nbsp;&nbsp;"COLLABORATION_PARTICIPANTS" VARCHAR(150),<br>&nbsp;&nbsp;&nbsp;&nbsp;"COLLABORATION_RESPONSIBLE"
+                VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"RESPONSIBLE_EMAIL" VARCHAR(129),<br>&nbsp;&nbsp;&nbsp;&nbsp;"RESPONSIBLE_FULL_NAME"
+                VARCHAR(152),<br>&nbsp;&nbsp;&nbsp;&nbsp;"RESPONSIBLE_TELEPHONE_NUMBER" VARCHAR(35),<br>&nbsp;&nbsp;&nbsp;&nbsp;"IS_SCANNING"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VENDOR" VARCHAR(20),<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNTY_PK"
+                BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MUNICIPALITY_PK" BIGINT<br>)
+            </td>
+            <td></td>
+            <td>2171</td>
+            <td>375</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>CAST_VOTE_BATCH_MEMBER</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."CAST_VOTE_BATCH_MEMBER"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"CAST_VOTE_BATCH_MEMBER_PK"
+                BIGINT DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_BAECF135_B5B7_4854_966E_502117650894" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_BAECF135_B5B7_4854_966E_502117650894",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"DONE"
+                BOOLEAN,<br>&nbsp;&nbsp;&nbsp;&nbsp;"SERIAL_NUMBER" INTEGER,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CAST_VOTE_PK"
+                BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CAST_VOTE_BATCH_PK" BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1659</td>
+            <td>92</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>ROLE_ACCESS</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."ROLE_ACCESS"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"ROLE_ACCESS_PK" BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ACCESS_PK"
+                BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ROLE_PK" BIGINT DEFAULT NEXT VALUE FOR
+                "PUBLIC"."SYSTEM_SEQUENCE_9D201318_2C2E_4E88_B78E_26AAD74C0974" NOT NULL NULL_TO_DEFAULT SEQUENCE
+                "PUBLIC"."SYSTEM_SEQUENCE_9D201318_2C2E_4E88_B78E_26AAD74C0974"<br>)
+            </td>
+            <td></td>
+            <td>2141</td>
+            <td>363</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>LEVELING_SEAT</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."LEVELING_SEAT"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"LEVELING_SEAT_PK" BIGINT
+                DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_DE4EC5D8_1D12_4EAB_A0E8_97F943BADB47" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_DE4EC5D8_1D12_4EAB_A0E8_97F943BADB47",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONTEST_LEVELED"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"PARTY_LEVELED" BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"RANK_NUMBER"
+                INTEGER,<br>&nbsp;&nbsp;&nbsp;&nbsp;"SAME_QUOTIENT_AS_NEXT" BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"SAME_VOTES_AS_NEXT"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"SEAT_NUMBER" INTEGER,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CANDIDATE_SEAT_PK"
+                BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"LEVELING_SEAT_QUOTIENT_PK" BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"LEVELING_SEAT_SETTLEMENT_PK"
+                BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1845</td>
+            <td>228</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>POLLING_PLACE</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."POLLING_PLACE"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"POLLING_PLACE_PK" BIGINT
+                DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_2827126F_2490_4826_85D5_842FF246C169" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_2827126F_2490_4826_85D5_842FF246C169",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ADDRESS_LINE1"
+                VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ADDRESS_LINE2" VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ADDRESS_LINE3"
+                VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ADVANCE_VOTE_IN_BALLOT_BOX" BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_DAY_VOTING"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"GPS_COORDINATES" VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"POLLING_PLACE_ID"
+                VARCHAR(4) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"INFO_TEXT" VARCHAR(150),<br>&nbsp;&nbsp;&nbsp;&nbsp;"POLLING_PLACE_NAME"
+                VARCHAR(50) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"POST_TOWN" VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"POSTAL_CODE"
+                VARCHAR(4),<br>&nbsp;&nbsp;&nbsp;&nbsp;"PUBLIC_PLACE" BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"USING_POLLING_STATIONS"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"POLLING_DISTRICT_PK" BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>2066</td>
+            <td>316</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>VOTER_AUDIT</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."VOTER_AUDIT"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK" INTEGER NOT
+                NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTER_PK"
+                BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AARSAKSKODE" VARCHAR(2),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ADDRESS_LINE1"
+                VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ADDRESS_LINE2" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ADDRESS_LINE3"
+                VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"APPROVAL_REQUEST" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"APPROVED"
+                BOOLEAN,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION" CHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR"
+                VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_USER" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"BOROUGH_ID"
+                VARCHAR(6),<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNTRY_ID" VARCHAR(2),<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNTY_ID"
+                VARCHAR(2),<br>&nbsp;&nbsp;&nbsp;&nbsp;"DATE_OF_BIRTH" DATE,<br>&nbsp;&nbsp;&nbsp;&nbsp;"DATE_TIME_SUBMITTED"
+                TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_EVENT_PK" BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELIGIBLE"
+                BOOLEAN,<br>&nbsp;&nbsp;&nbsp;&nbsp;"EMAIL" VARCHAR(129),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ENDRINGSTYPE"
+                CHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"FIRST_NAME" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"IMPORT_BATCH_NUMBER"
+                INTEGER,<br>&nbsp;&nbsp;&nbsp;&nbsp;"LAST_NAME" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"MAILING_ADDRESS_LINE1"
+                VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"MAILING_ADDRESS_LINE2" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"MAILING_ADDRESS_LINE3"
+                VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"MAILING_ADDRESS_SPECIFIED" BOOLEAN,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MAILING_COUNTRY_CODE"
+                VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"MIDDLE_NAME" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"MUNICIPALITY_ID"
+                VARCHAR(4),<br>&nbsp;&nbsp;&nbsp;&nbsp;"NAME_LINE" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"POLLING_DISTRICT_ID"
+                VARCHAR(4),<br>&nbsp;&nbsp;&nbsp;&nbsp;"POST_TOWN" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"POSTAL_CODE"
+                VARCHAR(4),<br>&nbsp;&nbsp;&nbsp;&nbsp;"REG_DATO" DATE,<br>&nbsp;&nbsp;&nbsp;&nbsp;"SPES_REG_TYPE"
+                CHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"STATUSKODE" CHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"TELEPHONE_NUMBER"
+                VARCHAR(35),<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTER_ID" VARCHAR(11),<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTER_NUMBER"
+                BIGINT<br>)
+            </td>
+            <td></td>
+            <td>887</td>
+            <td>427</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>ROLE_INCLUDE</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."ROLE_INCLUDE"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"ROLE_INCLUDE_PK" BIGINT NOT
+                NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION" VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR"
+                VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK" INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP"
+                TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"INCLUDED_ROLE_PK" BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ROLE_PK"
+                BIGINT DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_07AAFD43_2F2D_43D5_B5E7_49CA5894CD97" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_07AAFD43_2F2D_43D5_B5E7_49CA5894CD97"<br>)
+            </td>
+            <td></td>
+            <td>2161</td>
+            <td>371</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>BALLOT_REJECTION</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."BALLOT_REJECTION"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"BALLOT_REJECTION_PK" BIGINT
+                DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_9D0386CD_8CF3_408E_822D_10F4A7708288" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_9D0386CD_8CF3_408E_822D_10F4A7708288",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"EARLY_VOTING"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"BALLOT_REJECTION_ID" VARCHAR(6) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"BALLOT_REJECTION_NAME"
+                VARCHAR(50) NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>974</td>
+            <td>37</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>CANDIDATE_AUDIT</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."CANDIDATE_AUDIT"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK" INTEGER NOT
+                NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CANDIDATE_PK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ADDRESS_LINE1" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ADDRESS_LINE2"
+                VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ADDRESS_LINE3" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AFFILIATION_PK"
+                INTEGER,<br>&nbsp;&nbsp;&nbsp;&nbsp;"APPROVED" BOOLEAN,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"BALLOT_PK" BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"BASELINE_VOTES"
+                BOOLEAN,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CANDIDATE_ID" VARCHAR(11),<br>&nbsp;&nbsp;&nbsp;&nbsp;"DATE_OF_BIRTH"
+                DATE,<br>&nbsp;&nbsp;&nbsp;&nbsp;"DISPLAY_ORDER" INTEGER,<br>&nbsp;&nbsp;&nbsp;&nbsp;"EMAIL"
+                VARCHAR(129),<br>&nbsp;&nbsp;&nbsp;&nbsp;"FIRST_NAME" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"INFO_TEXT"
+                VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"LAST_NAME" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"MARITAL_STATUS_PK"
+                INTEGER,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MIDDLE_NAME" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"NAME_LINE"
+                VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"POST_TOWN" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"POSTAL_CODE"
+                VARCHAR(4),<br>&nbsp;&nbsp;&nbsp;&nbsp;"PROFESSION" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"RESIDENCE"
+                VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"TELEPHONE_NUMBER" VARCHAR(35)<br>)
+            </td>
+            <td></td>
+            <td>157</td>
+            <td>65</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>REPORT_COUNT_CATEGORY</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."REPORT_COUNT_CATEGORY"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"REPORT_COUNT_CATEGORY_PK"
+                BIGINT DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_813C7716_5067_4069_A255_E5FAE1FB073F" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_813C7716_5067_4069_A255_E5FAE1FB073F",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CENTRAL_PRELIMINARY_COUNT"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"POLLING_DISTRICT_COUNT" BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"SPECIAL_COVER"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"TECHNICAL_POLLING_DISTRICT_COUNT" BOOLEAN,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_GROUP_PK"
+                BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTE_COUNT_CATEGORY_PK" BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MUNICIPALITY_PK"
+                BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>2101</td>
+            <td>339</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>SIGNING_KEY</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."SIGNING_KEY"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"SIGNING_KEY_PK" BIGINT DEFAULT
+                NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_95AB2508_EAB0_4E1A_B943_06375F160A4D" NOT NULL NULL_TO_DEFAULT
+                SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_95AB2508_EAB0_4E1A_B943_06375F160A4D",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"KEY_ENCRYPTED_PASSPHRASE"
+                VARCHAR(100),<br>&nbsp;&nbsp;&nbsp;&nbsp;"KEY_BINARY_DATA_PK" BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_EVENT_PK"
+                BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"KEY_DOMAIN_PK" BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>2194</td>
+            <td>387</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>VOTING</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."VOTING"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTING_PK" BIGINT DEFAULT NEXT VALUE
+                FOR "PUBLIC"."SYSTEM_SEQUENCE_228EA926_FD05_420F_B807_146EAC8DAD8B" NOT NULL NULL_TO_DEFAULT SEQUENCE
+                "PUBLIC"."SYSTEM_SEQUENCE_228EA926_FD05_420F_B807_146EAC8DAD8B",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"APPROVED"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"BALLOT_BOX_ID" VARCHAR(4),<br>&nbsp;&nbsp;&nbsp;&nbsp;"CAST_TIMESTAMP"
+                TIMESTAMP NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"LATE_VALIDATION" BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"PHASE"
+                VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"RECEIVED_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"REMOVAL_REQUEST"
+                VARCHAR(150),<br>&nbsp;&nbsp;&nbsp;&nbsp;"VALIDATION_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTING_NUMBER"
+                INTEGER,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_GROUP_PK" BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MV_AREA_PK"
+                BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"OPERATOR_PK" BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"POLLING_PLACE_PK"
+                BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"SUGGESTED_VOTING_REJECTION_PK" BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTER_PK"
+                BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTING_CATEGORY_PK" BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTING_REJECTION_PK"
+                BIGINT<br>)
+            </td>
+            <td></td>
+            <td>2312</td>
+            <td>434</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>AFFILIATION</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."AFFILIATION"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"AFFILIATION_PK" BIGINT DEFAULT
+                NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_84D0A4E5_02F9_49BC_BA8E_CF8CBB83F18D" NOT NULL NULL_TO_DEFAULT
+                SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_84D0A4E5_02F9_49BC_BA8E_CF8CBB83F18D",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"APPROVED"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"DISPLAY_ORDER" INTEGER,<br>&nbsp;&nbsp;&nbsp;&nbsp;"SHOW_CANDIDATE_PROFESSION"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"SHOW_CANDIDATE_RESIDENCE" BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"BALLOT_PK"
+                BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"PARTY_PK" BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1464</td>
+            <td>13</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>STATUSKODE</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."STATUSKODE"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"STATUSKODE_PK" BIGINT DEFAULT
+                NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_2B6CA50F_B030_496F_9415_D78B4105B30E" NOT NULL NULL_TO_DEFAULT
+                SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_2B6CA50F_B030_496F_9415_D78B4105B30E",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"STATUSKODE_ID"
+                CHAR(1) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"STATUSKODE_NAME" VARCHAR(50) NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1394</td>
+            <td>395</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>CONTEST_TEXT</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."CONTEST_TEXT"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONTEST_TEXT_PK" BIGINT DEFAULT
+                NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_436BE7CF_5D6E_48B5_BEB0_60A12DA8F2A4" NOT NULL NULL_TO_DEFAULT
+                SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_436BE7CF_5D6E_48B5_BEB0_60A12DA8F2A4",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONTEST_TEXT"
+                VARCHAR(150) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONTEST_TEXT_NAME" VARCHAR(50) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONTEST_PK"
+                BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1699</td>
+            <td>127</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>ELECTION_GROUP</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."ELECTION_GROUP"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_GROUP_PK" BIGINT
+                DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_323EF79F_9674_4FBE_98CD_D95998E56FF5" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_323EF79F_9674_4FBE_98CD_D95998E56FF5",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ADVANCE_VOTE_IN_BALLOT_BOX"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTRONIC_MARKOFFS" BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_GROUP_ID"
+                VARCHAR(2) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_GROUP_NAME" VARCHAR(100) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"SCANNING_PERMITTED"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VALIDATE_POLLING_PLACE_ELECTORAL_BOARD_AND_LIST_PROPOSAL"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VALIDATE_ROLE_AND_LIST_PROPOSAL" BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_EVENT_PK"
+                BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1787</td>
+            <td>181</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>CANDIDATE_VOTE</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."CANDIDATE_VOTE"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"CANDIDATE_VOTE_PK" BIGINT
+                DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_F804DEC7_5144_428E_87F3_0B9F396355C1" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_F804DEC7_5144_428E_87F3_0B9F396355C1",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"RENUMBER_POSITION"
+                INTEGER,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CANDIDATE_PK" BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CAST_VOTE_PK"
+                BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTE_CATEGORY_PK" BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1609</td>
+            <td>76</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>ELECTION_EVENT</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."ELECTION_EVENT"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_EVENT_PK" BIGINT
+                DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_98374FE0_BF83_4739_A564_51A504A41089" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_98374FE0_BF83_4739_A564_51A504A41089",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ADVANCE_VOTING_START_DATE"
+                DATE,<br>&nbsp;&nbsp;&nbsp;&nbsp;"DEMO_ELECTION" BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"EARLY_ADVANCE_VOTING_START_DATE"
+                DATE,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_END_DATE" DATE,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_END_TIME"
+                TIME,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTORAL_ROLL_CUT_OFF_DATE" DATE NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTORAL_ROLL_LINES_PER_PAGE"
+                INTEGER CHECK (("ELECTORAL_ROLL_LINES_PER_PAGE" &gt;= 0)<br>&nbsp;&nbsp;&nbsp;&nbsp;AND
+                ("ELECTORAL_ROLL_LINES_PER_PAGE" &lt;= 9999)),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_EVENT_ID" VARCHAR(8)
+                NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_EVENT_NAME" VARCHAR(100) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"THEME"
+                VARCHAR(125),<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTER_IMPORT_DIR_NAME" VARCHAR(226),<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTER_IMPORT_MUNICIPALITY"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTER_NUMBERS_ASSIGNED_DATE" DATE,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTING_CARD_DEADLINE"
+                DATE NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTING_CARD_ELECTORAL_ROLL_DATE" DATE NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_EVENT_STATUS_PK"
+                BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"LOCALE_PK" BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1767</td>
+            <td>165</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>RESPONSIBILITY</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."RESPONSIBILITY"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"RESPONSIBILITY_PK" BIGINT
+                DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_BE54569B_D2EC_4DA7_9268_7A3391A144C3" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_BE54569B_D2EC_4DA7_9268_7A3391A144C3",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"RESPONSIBILITY_ID"
+                VARCHAR(4) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"RESPONSIBILITY_NAME" VARCHAR(50) NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1354</td>
+            <td>351</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>MUNICIPALITY</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."MUNICIPALITY"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"MUNICIPALITY_PK" BIGINT DEFAULT
+                NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_86043EF3_71A7_4D2E_99D7_CB324948A21A" NOT NULL NULL_TO_DEFAULT
+                SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_86043EF3_71A7_4D2E_99D7_CB324948A21A",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AVKRYSNINGSMANNTALL_KJORT"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_CARD_TEXT" VARCHAR(200),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTRONIC_MARKOFFS"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"HANDLE_ELECTION_CARD_CENTRALLY" BOOLEAN,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MUNICIPALITY_ID"
+                VARCHAR(4) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MUNICIPALITY_NAME" VARCHAR(50) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"REQUIRED_PROTOCOL_COUNT"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"TECHNICAL_POLLING_DISTRICTS_ALLOWED" BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNTY_PK"
+                BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"LOCALE_PK" BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MUNICIPALITY_STATUS_PK"
+                BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1918</td>
+            <td>260</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>BALLOT</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."BALLOT"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"BALLOT_PK" BIGINT DEFAULT NEXT VALUE
+                FOR "PUBLIC"."SYSTEM_SEQUENCE_5F387548_10E2_4324_A4DC_B2A465F57C5D" NOT NULL NULL_TO_DEFAULT SEQUENCE
+                "PUBLIC"."SYSTEM_SEQUENCE_5F387548_10E2_4324_A4DC_B2A465F57C5D",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"APPROVED"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"DISPLAY_ORDER" INTEGER,<br>&nbsp;&nbsp;&nbsp;&nbsp;"BALLOT_ID"
+                VARCHAR(10) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"BALLOT_STATUS_PK" BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONTEST_PK"
+                BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"LOCALE_PK" BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1504</td>
+            <td>29</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>LOCALE</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."LOCALE"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"LOCALE_PK" BIGINT DEFAULT NEXT VALUE
+                FOR "PUBLIC"."SYSTEM_SEQUENCE_6183EA48_2051_4D35_BC75_891B3E4BC1A1" NOT NULL NULL_TO_DEFAULT SEQUENCE
+                "PUBLIC"."SYSTEM_SEQUENCE_6183EA48_2051_4D35_BC75_891B3E4BC1A1",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"LOCALE_ID"
+                VARCHAR(5) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"LOCALE_NAME" VARCHAR(50) NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1214</td>
+            <td>244</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>OPERATOR</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."OPERATOR"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"OPERATOR_PK" BIGINT DEFAULT NEXT
+                VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_80C74603_37DC_4F9C_8D8E_59FD7B7640E8" NOT NULL NULL_TO_DEFAULT
+                SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_80C74603_37DC_4F9C_8D8E_59FD7B7640E8",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ACTIVE"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ADDRESS_LINE1" VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ADDRESS_LINE2"
+                VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ADDRESS_LINE3" VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONTACT_INFO_CONFIRMED"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"EMAIL" VARCHAR(129),<br>&nbsp;&nbsp;&nbsp;&nbsp;"FIRST_NAME"
+                VARCHAR(50) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"OPERATOR_ID" VARCHAR(11) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"INFO_TEXT"
+                VARCHAR(150),<br>&nbsp;&nbsp;&nbsp;&nbsp;"KEY_SERIAL_NUMBER" VARCHAR(19),<br>&nbsp;&nbsp;&nbsp;&nbsp;"LAST_NAME"
+                VARCHAR(50) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MIDDLE_NAME" VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"NAME_LINE"
+                VARCHAR(152) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"POST_TOWN" VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"POSTAL_CODE"
+                VARCHAR(4),<br>&nbsp;&nbsp;&nbsp;&nbsp;"TELEPHONE_NUMBER" VARCHAR(35),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_EVENT_PK"
+                BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>2016</td>
+            <td>292</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>CONTEST</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."CONTEST"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONTEST_PK" BIGINT DEFAULT NEXT
+                VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_913031B0_7BEA_4464_835A_7CD30DEDAD3A" NOT NULL NULL_TO_DEFAULT
+                SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_913031B0_7BEA_4464_835A_7CD30DEDAD3A",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"END_DATE_OF_BIRTH"
+                DATE,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONTEST_ID" VARCHAR(6) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MAX_CANDIDATES"
+                INTEGER CHECK (("MAX_CANDIDATES" &gt;= 0)<br>&nbsp;&nbsp;&nbsp;&nbsp;AND ("MAX_CANDIDATES" &lt;= 9999)),<br>&nbsp;&nbsp;&nbsp;&nbsp;"MAX_RENUMBER"
+                INTEGER CHECK (("MAX_RENUMBER" &gt;= 0)<br>&nbsp;&nbsp;&nbsp;&nbsp;AND ("MAX_RENUMBER" &lt;= 9999)),<br>&nbsp;&nbsp;&nbsp;&nbsp;"MAX_VOTES"
+                INTEGER,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MAX_WRITE_IN" INTEGER CHECK (("MAX_WRITE_IN" &gt;= 0)<br>&nbsp;&nbsp;&nbsp;&nbsp;AND
+                ("MAX_WRITE_IN" &lt;= 9999)),<br>&nbsp;&nbsp;&nbsp;&nbsp;"MIN_CANDIDATES" INTEGER CHECK
+                (("MIN_CANDIDATES" &gt;= 0)<br>&nbsp;&nbsp;&nbsp;&nbsp;AND ("MIN_CANDIDATES" &lt;= 9999)),<br>&nbsp;&nbsp;&nbsp;&nbsp;"MIN_PROPOSERS_NEW_PARTY"
+                INTEGER,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MIN_PROPOSERS_OLD_PARTY" INTEGER,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MIN_VOTES"
+                INTEGER,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONTEST_NAME" VARCHAR(100) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"NUMBER_OF_POSITIONS"
+                INTEGER CHECK (("NUMBER_OF_POSITIONS" &gt;= 0)<br>&nbsp;&nbsp;&nbsp;&nbsp;AND ("NUMBER_OF_POSITIONS"
+                &lt;= 9999)),<br>&nbsp;&nbsp;&nbsp;&nbsp;"PENULTIMATE_RECOUNT" BOOLEAN,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONTEST_STATUS_PK"
+                BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_PK" BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1669</td>
+            <td>104</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>ELECTION_SEAT</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."ELECTION_SEAT"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_SEAT_PK" BIGINT
+                DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_F8FDC3A1_4FDB_45BF_B6CB_AFD5CF9CEF65" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_F8FDC3A1_4FDB_45BF_B6CB_AFD5CF9CEF65",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"DIVIDEND"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"DIVISOR" DECIMAL(5, 0) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTED"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"QUOTIENT" DECIMAL(14, 0) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"SAME_QUOTIENT_AS_NEXT"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"SAME_VOTES_AS_NEXT" BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"SEAT_NUMBER"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_SETTLEMENT_PK" BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"PARTY_PK"
+                BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1797</td>
+            <td>189</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>ELECTION_DAY_VOTINGS</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."ELECTION_DAY_VOTINGS"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONTEST_PK" BIGINT NOT
+                NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_DAY_PK" BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MV_AREA_PK"
+                BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTING_CATEGORY_PK" BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTINGS"
+                INTEGER CHECK ("VOTINGS" &gt;= 0)<br>)
+            </td>
+            <td></td>
+            <td>1757</td>
+            <td>162</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>SETTLEMENT</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."SETTLEMENT"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"SETTLEMENT_PK" BIGINT DEFAULT
+                NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_E1A27B7C_2050_477A_877D_51237BD3FCB2" NOT NULL NULL_TO_DEFAULT
+                SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_E1A27B7C_2050_477A_877D_51237BD3FCB2",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"FINAL_SETTLEMENT"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"SETTLEMENT_NUMBER" INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONTEST_PK"
+                BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>2176</td>
+            <td>379</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>LEVELING_SEAT_QUOTIENT</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."LEVELING_SEAT_QUOTIENT"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"LEVELING_SEAT_QUOTIENT_PK"
+                BIGINT DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_8CBDCE1B_2C38_4576_B947_0FDDD00B3E90" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_8CBDCE1B_2C38_4576_B947_0FDDD00B3E90",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONTEST_SEATS"
+                INTEGER,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONTEST_VOTES" INTEGER,<br>&nbsp;&nbsp;&nbsp;&nbsp;"DIVIDEND"
+                DECIMAL(19, 2),<br>&nbsp;&nbsp;&nbsp;&nbsp;"DIVISOR" DECIMAL(19, 2),<br>&nbsp;&nbsp;&nbsp;&nbsp;"PARTY_SEATS"
+                INTEGER,<br>&nbsp;&nbsp;&nbsp;&nbsp;"PARTY_VOTES" INTEGER,<br>&nbsp;&nbsp;&nbsp;&nbsp;"QUOTIENT"
+                DECIMAL(19, 2),<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONTEST_PK" BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"LEVELING_SEAT_SETTLEMENT_PK"
+                BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"PARTY_PK" BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1860</td>
+            <td>232</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>CANDIDATE_VOTE_COUNT</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."CANDIDATE_VOTE_COUNT"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"CANDIDATE_VOTE_COUNT_PK"
+                BIGINT DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_B0E826D8_B387_435D_A290_62CB036E5F62" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_B0E826D8_B387_435D_A290_62CB036E5F62",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"EARLY_VOTING_VOTES"
+                DECIMAL(10, 0) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_DAY_VOTES" DECIMAL(10, 0) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"RANK_NUMBER"
+                INTEGER,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTES" DECIMAL(10, 0) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AFFILIATION_PK"
+                BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CANDIDATE_PK" BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"SETTLEMENT_PK"
+                BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTE_CATEGORY_PK" BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1629</td>
+            <td>80</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>CAST_VOTE_BATCH</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."CAST_VOTE_BATCH"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"CAST_VOTE_BATCH_PK" BIGINT
+                DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_3359DADF_85F8_462C_9815_F357F377CB2A" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_3359DADF_85F8_462C_9815_F357F377CB2A",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"BATCH_ID"
+                VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"PROCESS" VARCHAR(255) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"BALLOT_COUNT_PK"
+                BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"OPERATOR_PK" BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1649</td>
+            <td>88</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>COUNTY_STATUS</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."COUNTY_STATUS"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNTY_STATUS_PK" BIGINT
+                DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_10322C9D_4214_418E_A843_469C1713179E" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_10322C9D_4214_418E_A843_469C1713179E",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNTY_STATUS_ID"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNTY_STATUS_NAME" VARCHAR(50) NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1109</td>
+            <td>150</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>SETTLEMENT_NUMBER</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."SETTLEMENT_NUMBER"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"SETTLEMENT_NUMBER_PK"
+                BIGINT DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_84ACA7B4_A850_4A5C_9841_F2792B678294" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_84ACA7B4_A850_4A5C_9841_F2792B678294",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"LAST_SETTLEMENT_NUMBER"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONTEST_PK" BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>2179</td>
+            <td>383</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>AARSAKSKODE</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."AARSAKSKODE"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"AARSAKSKODE_PK" BIGINT DEFAULT
+                NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_F463C764_71A9_443B_97A6_1D1CF981A5E5" NOT NULL NULL_TO_DEFAULT
+                SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_F463C764_71A9_443B_97A6_1D1CF981A5E5",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AARSAKSKODE_ID"
+                VARCHAR(2) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AARSAKSKODE_NAME" VARCHAR(100) NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>924</td>
+            <td>5</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>MARITAL_STATUS</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."MARITAL_STATUS"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"MARITAL_STATUS_PK" BIGINT
+                DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_0341E705_4C1E_41F0_B735_03070DE260BA" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_0341E705_4C1E_41F0_B735_03070DE260BA",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MARITAL_STATUS_ID"
+                VARCHAR(2) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MARITAL_STATUS_NAME" VARCHAR(50) NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1229</td>
+            <td>256</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>SPES_REG_TYPE</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."SPES_REG_TYPE"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"SPES_REG_TYPE_PK" BIGINT
+                DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_474E3EC2_F9A6_4625_B897_A52342652E80" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_474E3EC2_F9A6_4625_B897_A52342652E80",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"SPES_REG_TYPE_ID"
+                CHAR(1) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"SPES_REG_TYPE_NAME" VARCHAR(50) NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1389</td>
+            <td>391</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>OPERATOR_ROLE</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."OPERATOR_ROLE"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"OPERATOR_ROLE_PK" BIGINT
+                DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_705EF158_8A26_4C3C_995B_0C99F35EB742" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_705EF158_8A26_4C3C_995B_0C99F35EB742",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MV_AREA_PK"
+                BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MV_ELECTION_PK" BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"OPERATOR_PK"
+                BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ROLE_PK" BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>2036</td>
+            <td>296</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>ELECTION_EVENT_TEXT</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."ELECTION_EVENT_TEXT"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_EVENT_TEXT_PK"
+                BIGINT DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_57BF9B29_9709_4F9E_89FF_3D30C072A0C3" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_57BF9B29_9709_4F9E_89FF_3D30C072A0C3",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_EVENT_TEXT"
+                VARCHAR(150) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_EVENT_TEXT_NAME" VARCHAR(50) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_EVENT_PK"
+                BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1782</td>
+            <td>177</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>ELECTION_TEXT</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."ELECTION_TEXT"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_TEXT_PK" BIGINT
+                DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_929D7BC0_2F3A_4183_B573_133F5F518807" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_929D7BC0_2F3A_4183_B573_133F5F518807",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_TEXT"
+                VARCHAR(150) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_TEXT_NAME" VARCHAR(50) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_PK"
+                BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1807</td>
+            <td>197</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>FOREIGN_EARLY_VOTING</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."FOREIGN_EARLY_VOTING"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTING_PK" BIGINT
+                DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_7BBBEB8B_E2BA_4038_83B0_489CBD01FEC3" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_7BBBEB8B_E2BA_4038_83B0_489CBD01FEC3",<br>&nbsp;&nbsp;&nbsp;&nbsp;"V_MUNICIPALITY_ID"
+                VARCHAR(4),<br>&nbsp;&nbsp;&nbsp;&nbsp;"V_MUNICIPALITY_NAME" VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"CAST_TIMESTAMP"
+                TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"DATE_OF_BIRTH" DATE,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_GROUP_NAME"
+                VARCHAR(100),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_GROUP_PK" BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MUNICIPALITY_ID"
+                VARCHAR(4),<br>&nbsp;&nbsp;&nbsp;&nbsp;"MUNICIPALITY_NAME" VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"MUNICIPALITY_PK"
+                INTEGER,<br>&nbsp;&nbsp;&nbsp;&nbsp;"NAME_LINE" VARCHAR(152),<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTER_ID"
+                VARCHAR(11)<br>)
+            </td>
+            <td></td>
+            <td>465</td>
+            <td>216</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>COUNTRY</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."COUNTRY"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNTRY_PK" BIGINT DEFAULT NEXT
+                VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_F40BE0BA_8AB0_4287_931C_3E2D499FE879" NOT NULL NULL_TO_DEFAULT
+                SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_F40BE0BA_8AB0_4287_931C_3E2D499FE879",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNTRY_ID"
+                VARCHAR(2) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNTRY_NAME" VARCHAR(50) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_EVENT_PK"
+                BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1704</td>
+            <td>138</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>MV_ELECTION</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."MV_ELECTION"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"MV_ELECTION_PK" BIGINT DEFAULT
+                NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_28665797_9FFE_4FBE_919E_3B8FA198D16A" NOT NULL NULL_TO_DEFAULT
+                SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_28665797_9FFE_4FBE_919E_3B8FA198D16A",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AREA_LEVEL"
+                INTEGER,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONTEST_NAME" VARCHAR(100),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_EVENT_NAME"
+                VARCHAR(100) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_GROUP_NAME" VARCHAR(100),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_LEVEL"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_NAME" VARCHAR(100),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_PATH"
+                VARCHAR(19) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONTEST_END_DATE_OF_BIRTH" DATE,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONTEST_ID"
+                VARCHAR(8),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_END_DATE_OF_BIRTH" DATE,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_EVENT_ID"
+                VARCHAR(8) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_GROUP_ID" VARCHAR(8),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_ID"
+                VARCHAR(8),<br>&nbsp;&nbsp;&nbsp;&nbsp;"SINGLE_AREA" BOOLEAN,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_PK"
+                BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONTEST_PK" BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_EVENT_PK"
+                BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_GROUP_PK" BIGINT<br>)
+            </td>
+            <td></td>
+            <td>1991</td>
+            <td>280</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>RESPONSIBLE_OFFICER</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."RESPONSIBLE_OFFICER"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"RESPONSIBLE_OFFICER_PK"
+                BIGINT DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_19A79D23_06A1_4465_93F7_8250C05B0F28" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_19A79D23_06A1_4465_93F7_8250C05B0F28",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ADDRESS_LINE1"
+                VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ADDRESS_LINE2" VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ADDRESS_LINE3"
+                VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"DISPLAY_ORDER" INTEGER NOT NULL CHECK (("DISPLAY_ORDER" &gt;=
+                1)<br>&nbsp;&nbsp;&nbsp;&nbsp;AND ("DISPLAY_ORDER" &lt;= 9999)),<br>&nbsp;&nbsp;&nbsp;&nbsp;"EMAIL"
+                VARCHAR(129),<br>&nbsp;&nbsp;&nbsp;&nbsp;"FIRST_NAME" VARCHAR(50) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"LAST_NAME"
+                VARCHAR(50) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MIDDLE_NAME" VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"NAME_LINE"
+                VARCHAR(152) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"POST_TOWN" VARCHAR(50),<br>&nbsp;&nbsp;&nbsp;&nbsp;"POSTAL_CODE"
+                VARCHAR(4),<br>&nbsp;&nbsp;&nbsp;&nbsp;"TELEPHONE_NUMBER" VARCHAR(35),<br>&nbsp;&nbsp;&nbsp;&nbsp;"REPORTING_UNIT_PK"
+                BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"RESPONSIBILITY_PK" BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>2126</td>
+            <td>355</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>AFFILIATION_VOTE_COUNT</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."AFFILIATION_VOTE_COUNT"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"AFFILIATION_VOTE_COUNT_PK"
+                BIGINT DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_70710F8F_400D_45C3_ADBB_8395DC45B2F3" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_70710F8F_400D_45C3_ADBB_8395DC45B2F3",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ADDED_VOTES"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"BALLOTS" INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"BASELINE_VOTES"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"EARLY_VOTING_BALLOTS" INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"EARLY_VOTING_MODIFIED_BALLOTS"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_DAY_BALLOTS" INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_DAY_MODIFIED_BALLOTS"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MODIFIED_BALLOTS" INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"SUBTRACTED_VOTES"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTES" INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AFFILIATION_PK"
+                BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"SETTLEMENT_PK" BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1474</td>
+            <td>17</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>CAST_VOTE</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."CAST_VOTE"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"CAST_VOTE_PK" BIGINT DEFAULT NEXT
+                VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_80E21207_3C89_4720_84C7_1ED486B4BB98" NOT NULL NULL_TO_DEFAULT
+                SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_80E21207_3C89_4720_84C7_1ED486B4BB98",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CAST_VOTE_ID"
+                VARCHAR(10) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"TYPE" VARCHAR(255) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"BALLOT_COUNT_PK"
+                BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"SCAN_BINARY_DATA_PK" BIGINT<br>)
+            </td>
+            <td></td>
+            <td>1639</td>
+            <td>84</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>COUNTY_LOCAL_CONFIG_STATUS</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."COUNTY_LOCAL_CONFIG_STATUS"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNTY_LOCAL_CONFIG_STATUS_PK"
+                BIGINT DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_9A384922_8369_4C62_B5E1_3A0E826BDD47" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_9A384922_8369_4C62_B5E1_3A0E826BDD47",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"LANGUAGE"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"LIST_PROPOSALS" BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"REPORTING_UNIT_FYLKESVALGSTYRE"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"SCANNING" BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNTY_PK"
+                BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1722</td>
+            <td>146</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>COUNTY</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."COUNTY"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNTY_PK" BIGINT DEFAULT NEXT VALUE
+                FOR "PUBLIC"."SYSTEM_SEQUENCE_9E055166_23CE_4BC2_B4BE_E0B10B86C082" NOT NULL NULL_TO_DEFAULT SEQUENCE
+                "PUBLIC"."SYSTEM_SEQUENCE_9E055166_23CE_4BC2_B4BE_E0B10B86C082",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNTY_ID"
+                VARCHAR(2) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNTY_NAME" VARCHAR(50) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNTRY_PK"
+                BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNTY_STATUS_PK" BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"LOCALE_PK"
+                BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1719</td>
+            <td>142</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>LEVELING_SEAT_SUMMARY</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."LEVELING_SEAT_SUMMARY"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"LEVELING_SEAT_SUMMARY_PK"
+                BIGINT DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_1A8938DE_D961_4749_8DDF_0628490B5F4A" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_1A8938DE_D961_4749_8DDF_0628490B5F4A",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONTEST_SEATS"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_SEATS" INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"LEVELING_SEATS"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_SETTLEMENT_PK" BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"PARTY_PK"
+                BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1873</td>
+            <td>240</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>POLLING_DISTRICT</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."POLLING_DISTRICT"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"POLLING_DISTRICT_PK" BIGINT
+                DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_ED24A788_6A1D_440D_8EC2_406FA6A06DCD" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_ED24A788_6A1D_440D_8EC2_406FA6A06DCD",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"POLLING_DISTRICT_ID"
+                VARCHAR(4) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MUNICIPALITY" BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"POLLING_DISTRICT_NAME"
+                VARCHAR(50) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"PARENT_POLLING_DISTRICT" BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"TECHNICAL_POLLING_DISTRICT"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"BOROUGH_PK" BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"PARENT_POLLING_DISTRICT_PK"
+                BIGINT<br>)
+            </td>
+            <td></td>
+            <td>2061</td>
+            <td>312</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>ELECTION_LEVEL</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."ELECTION_LEVEL"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_LEVEL_PK" BIGINT
+                DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_8080178A_FEFC_4B35_BF61_9B49B5FF1B79" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_8080178A_FEFC_4B35_BF61_9B49B5FF1B79",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_LEVEL_ID"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_LEVEL_NAME" VARCHAR(50) NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1144</td>
+            <td>185</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>CANDIDATE_RANK</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."CANDIDATE_RANK"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"CANDIDATE_RANK_PK" BIGINT
+                DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_960D6BDB_4F4D_46B3_84EC_18910E645FFC" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_960D6BDB_4F4D_46B3_84EC_18910E645FFC",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"RANK_NUMBER"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTES" DECIMAL(10, 0) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AFFILIATION_PK"
+                BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CANDIDATE_PK" BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"SETTLEMENT_PK"
+                BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1579</td>
+            <td>68</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>BATCH_STATUS</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."BATCH_STATUS"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"BATCH_STATUS_PK" BIGINT DEFAULT
+                NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_8DE5771A_D1ED_4053_A4F8_26BFA7F08DF2" NOT NULL NULL_TO_DEFAULT
+                SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_8DE5771A_D1ED_4053_A4F8_26BFA7F08DF2",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"BATCH_STATUS_ID"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"BATCH_STATUS_NAME" VARCHAR(50) NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>989</td>
+            <td>49</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>LEVELING_SEAT_SETTLEMENT</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."LEVELING_SEAT_SETTLEMENT"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"LEVELING_SEAT_SETTLEMENT_PK"
+                BIGINT DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_B8EA12DC_D43E_4AA3_ADE1_9B28CBE877CC" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_B8EA12DC_D43E_4AA3_ADE1_9B28CBE877CC",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_PK"
+                BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1863</td>
+            <td>236</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>VOTING_REJECTION</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."VOTING_REJECTION"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTING_REJECTION_PK" BIGINT
+                DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_4C08126A_5A4D_4889_AB47_0763075A0215" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_4C08126A_5A4D_4889_AB47_0763075A0215",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"EARLY_VOTING"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTING_REJECTION_ID" VARCHAR(8) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTING_REJECTION_NAME"
+                VARCHAR(50) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"SUGGESTED_VOTING_REJECTION_NAME" VARCHAR(50) NOT
+                NULL<br>)
+            </td>
+            <td></td>
+            <td>1454</td>
+            <td>442</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>ELECTION</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."ELECTION"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_PK" BIGINT DEFAULT NEXT
+                VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_4C5A1107_0716_4CD9_9C76_933DDF37DACC" NOT NULL NULL_TO_DEFAULT
+                SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_4C5A1107_0716_4CD9_9C76_933DDF37DACC",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AREA_LEVEL"
+                INTEGER NOT NULL CHECK (("AREA_LEVEL" &gt;= 0)<br>&nbsp;&nbsp;&nbsp;&nbsp;AND ("AREA_LEVEL" &lt;=
+                7)),<br>&nbsp;&nbsp;&nbsp;&nbsp;"BASELINE_VOTE_FACTOR" DECIMAL(3, 0) CHECK (("BASELINE_VOTE_FACTOR" &gt;=
+                0)<br>&nbsp;&nbsp;&nbsp;&nbsp;AND ("BASELINE_VOTE_FACTOR" &lt;= 1)),<br>&nbsp;&nbsp;&nbsp;&nbsp;"CANDIDATE_RANK_VOTE_SHARE_THRESHOLD"
+                DECIMAL(3, 0) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CANDIDATES_IN_CONTEST_AREA" BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"END_DATE_OF_BIRTH"
+                DATE NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_ID" VARCHAR(8) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"LEVELING_SEATS"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"LEVELING_SEATS_VOTE_SHARE_THRESHOLD" DECIMAL(3, 0) NOT
+                NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MAX_CANDIDATE_NAME_LENGTH" INTEGER,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MAX_CANDIDATE_RESIDENCE_PROFESSION_LENGTH"
+                INTEGER,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MAX_CANDIDATES" INTEGER,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MAX_CANDIDATES_ADDITION"
+                INTEGER,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MIN_CANDIDATES" INTEGER,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MIN_CANDIDATES_ADDITION"
+                INTEGER,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_NAME" VARCHAR(100) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"PENULTIMATE_RECOUNT"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"PERSONAL" BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"RENUMBER"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"RENUMBER_LIMIT" BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"SETTLEMENT_FIRST_DIVISOR"
+                DECIMAL(3, 0) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"SINGLE_AREA" BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"STRIKEOUT"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VALG_TYPE" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"WRITEIN"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"WRITEIN_LOCAL_OVERRIDE" BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_GROUP_PK"
+                BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_TYPE_PK" BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1732</td>
+            <td>154</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>MV_ELECTION_REPORTING_UNITS</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."MV_ELECTION_REPORTING_UNITS"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"MV_ELECTION_REPORTING_UNITS_PK"
+                BIGINT DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_C54C469B_0CC4_46D2_9F0F_11A843794D32" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_C54C469B_0CC4_46D2_9F0F_11A843794D32",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MV_ELECTION_PK"
+                BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"REPORTING_UNIT_TYPE_PK" BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>2001</td>
+            <td>284</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>ELIGIBILITY</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."ELIGIBILITY"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"MV_AREA_PK" BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MV_ELECTION_PK"
+                BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"BOROUGH_ID" VARCHAR(6),<br>&nbsp;&nbsp;&nbsp;&nbsp;"BOROUGH_NAME"
+                VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"BOROUGH_PK" BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONTEST_ID"
+                VARCHAR(8),<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONTEST_NAME" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNTRY_ID"
+                VARCHAR(2),<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNTRY_NAME" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNTRY_PK"
+                BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNTY_ID" VARCHAR(2),<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNTY_NAME"
+                VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNTY_PK" BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_END_DATE_OF_BIRTH"
+                DATE,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_EVENT_ID" VARCHAR(8),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_EVENT_NAME"
+                VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_EVENT_PK" BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_GROUP_ID"
+                VARCHAR(8),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_GROUP_NAME" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_GROUP_PK"
+                BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_ID" VARCHAR(8),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_NAME"
+                VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_PK" BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"END_DATE_OF_BIRTH"
+                DATE,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MUNICIPALITY_ID" VARCHAR(4),<br>&nbsp;&nbsp;&nbsp;&nbsp;"MUNICIPALITY_NAME"
+                VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"MUNICIPALITY_PK" BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"POLLING_DISTRICT_ID"
+                VARCHAR(4),<br>&nbsp;&nbsp;&nbsp;&nbsp;"POLLING_DISTRICT_NAME" VARCHAR(255)<br>)
+            </td>
+            <td></td>
+            <td>457</td>
+            <td>213</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>PROPOSER_ROLE</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."PROPOSER_ROLE"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"PROPOSER_ROLE_PK" BIGINT
+                DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_DA1F6386_8E73_4D04_818C_94A6B434F521" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_DA1F6386_8E73_4D04_818C_94A6B434F521",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"PROPOSER_ROLE_ID"
+                VARCHAR(4) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"PROPOSER_ROLE_NAME" VARCHAR(50) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"SINGLE"
+                BOOLEAN NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1334</td>
+            <td>331</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>COUNT_QUALIFIER</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."COUNT_QUALIFIER"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNT_QUALIFIER_PK" BIGINT
+                DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_302BD63E_7E9F_4BA4_ACEE_173497ACE121" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_302BD63E_7E9F_4BA4_ACEE_173497ACE121",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNT_QUALIFIER_ID"
+                VARCHAR(10) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNT_QUALIFIER_NAME" VARCHAR(50) NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1089</td>
+            <td>134</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>ELECTION_TYPE</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."ELECTION_TYPE"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_TYPE_PK" BIGINT
+                DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_B2826635_C1C1_421D_ACFF_884618B09D07" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_B2826635_C1C1_421D_ACFF_884618B09D07",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_TYPE_ID"
+                VARCHAR(8) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_TYPE_NAME" VARCHAR(50) NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1164</td>
+            <td>201</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>BOROUGH</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."BOROUGH"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"BOROUGH_PK" BIGINT DEFAULT NEXT
+                VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_526088C9_FA94_4CF9_9EA0_DBDCD6C19E1B" NOT NULL NULL_TO_DEFAULT
+                SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_526088C9_FA94_4CF9_9EA0_DBDCD6C19E1B",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"BOROUGH_ID"
+                VARCHAR(6) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MUNICIPALITY" BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"BOROUGH_NAME"
+                VARCHAR(50) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MUNICIPALITY_PK" BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1549</td>
+            <td>57</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>CERTIFICATE_REVOCATION_LIST</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."CERTIFICATE_REVOCATION_LIST"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"CERTIFICATE_REVOCATION_LIST_PK"
+                BIGINT DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_B7F159D1_BE8D_4393_A123_AD907CC67112" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_B7F159D1_BE8D_4393_A123_AD907CC67112",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ENCODED_CRL"
+                BYTEA NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ISSUER_DN" VARCHAR(100) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"NEXT_UPDATE"
+                TIMESTAMP NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"UPDATED" TIMESTAMP NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1049</td>
+            <td>96</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>LEGACY_POLLING_DISTRICT</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."LEGACY_POLLING_DISTRICT"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"LEGACY_POLLING_DISTRICT_PK"
+                BIGINT DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_493FE079_EBFA_4B7D_A9C6_D4CF88165E8A" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_493FE079_EBFA_4B7D_A9C6_D4CF88165E8A",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"LEGACY_MUNICIPALITY_ID"
+                VARCHAR(4) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"LEGACY_POLLING_DISTRICT_ID" VARCHAR(4) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTER_PK"
+                BIGINT<br>)
+            </td>
+            <td></td>
+            <td>1832</td>
+            <td>224</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>PARTY_CONTEST_AREA</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."PARTY_CONTEST_AREA"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"PARTY_CONTEST_AREA_PK"
+                BIGINT DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_9A38C57E_7C51_442E_98CA_D08D65A20D5A" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_9A38C57E_7C51_442E_98CA_D08D65A20D5A",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"BOROUGH_ID"
+                VARCHAR(6),<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNTY_ID" VARCHAR(2),<br>&nbsp;&nbsp;&nbsp;&nbsp;"MUNICIPALITY_ID"
+                VARCHAR(4),<br>&nbsp;&nbsp;&nbsp;&nbsp;"PARTY_PK" BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>2051</td>
+            <td>308</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>REPORTING_UNIT_TYPE</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."REPORTING_UNIT_TYPE"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"REPORTING_UNIT_TYPE_PK"
+                BIGINT DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_981E39BC_8FD1_414A_B7E9_964CCD5C580F" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_981E39BC_8FD1_414A_B7E9_964CCD5C580F",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AREA_LEVEL"
+                INTEGER,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_LEVEL" INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"REPORTING_UNIT_TYPE_ID"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"REPORTING_UNIT_TYPE_NAME" VARCHAR(50) NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1349</td>
+            <td>347</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>CONTEST_STATUS</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."CONTEST_STATUS"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONTEST_STATUS_PK" BIGINT
+                DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_954E2119_4D1B_42F4_9017_4556B60CC06C" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_954E2119_4D1B_42F4_9017_4556B60CC06C",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONTEST_STATUS_ID"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONTEST_STATUS_NAME" VARCHAR(50) NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1079</td>
+            <td>123</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>ELECTION_VOTE_COUNT</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."ELECTION_VOTE_COUNT"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_VOTE_COUNT_PK"
+                BIGINT DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_F41F588D_9E15_4A15_B64C_3AB1D6F925D2" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_F41F588D_9E15_4A15_B64C_3AB1D6F925D2",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ADDED_VOTES"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"BALLOTS" INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"BASELINE_VOTES"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONTEST_SEATS" INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"EARLY_VOTING_BALLOTS"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"EARLY_VOTING_MODIFIED_BALLOTS" INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_DAY_BALLOTS"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_DAY_MODIFIED_BALLOTS" INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELIGIBLE_FOR_LEVELING_SEATS"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MODIFIED_BALLOTS" INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"SUBTRACTED_VOTES"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"TOTAL_VOTES" INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTES"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"LEVELING_SEAT_SETTLEMENT_PK" BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"PARTY_PK"
+                BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1817</td>
+            <td>205</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>BINARY_DATA</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."BINARY_DATA"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"BINARY_DATA_PK" BIGINT DEFAULT
+                NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_170D44E9_6B21_4427_8733_554F45DCC6EA" NOT NULL NULL_TO_DEFAULT
+                SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_170D44E9_6B21_4427_8733_554F45DCC6EA",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"BINARY_DATA"
+                BYTEA NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"COLUMN_NAME" VARCHAR(50) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"FILE_NAME"
+                VARCHAR(226) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MIME_TYPE" VARCHAR(255) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"BINARY_DATA_NUMBER"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"TABLE_NAME" VARCHAR(50) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_EVENT_PK"
+                BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1544</td>
+            <td>53</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>ELECTION_EVENT_REPORT</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."ELECTION_EVENT_REPORT"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_EVENT_REPORT_PK"
+                BIGINT DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_49DFC40D_8ABA_4A91_A602_1228135D2D3F" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_49DFC40D_8ABA_4A91_A602_1228135D2D3F",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_EVENT_PK"
+                BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"REPORT_PK" BIGINT<br>)
+            </td>
+            <td></td>
+            <td>1777</td>
+            <td>169</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>BATCH</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."BATCH"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"BATCH_PK" BIGINT DEFAULT NEXT VALUE
+                FOR "PUBLIC"."SYSTEM_SEQUENCE_B67E7BCA_AA16_45FE_8FA2_0070BE4A6E52" NOT NULL NULL_TO_DEFAULT SEQUENCE
+                "PUBLIC"."SYSTEM_SEQUENCE_B67E7BCA_AA16_45FE_8FA2_0070BE4A6E52",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"BATCH_CATEGORY"
+                VARCHAR(255) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"INFO_TEXT" VARCHAR(150),<br>&nbsp;&nbsp;&nbsp;&nbsp;"MESSAGE_TEXT"
+                VARCHAR(500),<br>&nbsp;&nbsp;&nbsp;&nbsp;"BATCH_NUMBER" INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"BATCH_STATUS_PK"
+                BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"BATCH_BINARY_DATA_PK" BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_EVENT_PK"
+                BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"OPERATOR_ROLE_PK" BIGINT<br>)
+            </td>
+            <td></td>
+            <td>1539</td>
+            <td>45</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>ACCESS</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."ACCESS"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"ACCESS_PK" BIGINT DEFAULT NEXT VALUE
+                FOR "PUBLIC"."SYSTEM_SEQUENCE_B93A46E1_197E_4FED_BCF9_8E1F98AD6CEE" NOT NULL NULL_TO_DEFAULT SEQUENCE
+                "PUBLIC"."SYSTEM_SEQUENCE_B93A46E1_197E_4FED_BCF9_8E1F98AD6CEE",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ACCESS_NAME"
+                VARCHAR(50) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ACCESS_PATH" VARCHAR(100) NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>929</td>
+            <td>9</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>BALLOT_COUNT</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."BALLOT_COUNT"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"BALLOT_COUNT_PK" BIGINT DEFAULT
+                NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_93F14B00_E506_4F1C_86E2_3A486B8ADCBA" NOT NULL NULL_TO_DEFAULT
+                SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_93F14B00_E506_4F1C_86E2_3A486B8ADCBA",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MODIFIED_BALLOTS"
+                INTEGER NOT NULL CHECK ("MODIFIED_BALLOTS" &gt;= 0),<br>&nbsp;&nbsp;&nbsp;&nbsp;"UNMODIFIED_BALLOTS"
+                INTEGER NOT NULL CHECK ("UNMODIFIED_BALLOTS" &gt;= 0),<br>&nbsp;&nbsp;&nbsp;&nbsp;"BALLOT_PK"
+                BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"BALLOT_REJECTION_PK" BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTE_COUNT_PK"
+                BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1519</td>
+            <td>33</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>CONTEST_VOTING</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."CONTEST_VOTING"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONTEST_PK" BIGINT NOT
+                NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTING_PK" BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"APPROVED"
+                BOOLEAN,<br>&nbsp;&nbsp;&nbsp;&nbsp;"BOROUGH_ID" VARCHAR(6),<br>&nbsp;&nbsp;&nbsp;&nbsp;"BOROUGH_NAME"
+                VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"BOROUGH_PK" BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CAST_TIMESTAMP"
+                TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONTEST_ID" VARCHAR(8),<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONTEST_NAME"
+                VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNTRY_ID" VARCHAR(2),<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNTRY_NAME"
+                VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNTRY_PK" BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNTY_ID"
+                VARCHAR(2),<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNTY_NAME" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNTY_PK"
+                BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"DATE_OF_BIRTH" DATE,<br>&nbsp;&nbsp;&nbsp;&nbsp;"EARLY_VOTING"
+                BOOLEAN,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_EVENT_ID" VARCHAR(8),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_EVENT_NAME"
+                VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_EVENT_PK" BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_GROUP_ID"
+                VARCHAR(8),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_GROUP_NAME" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_GROUP_PK"
+                BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_ID" VARCHAR(8),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_NAME"
+                VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_PK" BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"LATE_VALIDATION"
+                BOOLEAN,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MUNICIPALITY_ID" VARCHAR(4),<br>&nbsp;&nbsp;&nbsp;&nbsp;"MUNICIPALITY_NAME"
+                VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"MUNICIPALITY_PK" BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MV_AREA_PK"
+                BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MV_ELECTION_PK" BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"NAME_LINE"
+                VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"POLLING_DISTRICT_ID" VARCHAR(4),<br>&nbsp;&nbsp;&nbsp;&nbsp;"POLLING_DISTRICT_NAME"
+                VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"POLLING_DISTRICT_PK" BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VALIDATION_TIMESTAMP"
+                TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTER_ID" VARCHAR(11),<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTER_PK"
+                BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTING_BOROUGH_ID" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTING_BOROUGH_NAME"
+                VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTING_BOROUGH_PK" BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTING_CATEGORY_ID"
+                VARCHAR(4),<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTING_CATEGORY_NAME" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTING_COUNTRY_ID"
+                VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTING_COUNTRY_NAME" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTING_COUNTRY_PK"
+                BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTING_COUNTY_ID" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTING_COUNTY_NAME"
+                VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTING_COUNTY_PK" BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTING_MUNICIPALITY_ID"
+                VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTING_MUNICIPALITY_NAME" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTING_MUNICIPALITY_PK"
+                BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTING_NUMBER" INTEGER,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTING_POLLING_DISTRICT_ID"
+                VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTING_POLLING_DISTRICT_NAME" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTING_POLLING_DISTRICT_PK"
+                BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTING_POLLING_PLACE_ID" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTING_POLLING_PLACE_NAME"
+                VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTING_POLLING_PLACE_PK" BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTING_REJECTION_PK"
+                BIGINT<br>)
+            </td>
+            <td></td>
+            <td>291</td>
+            <td>131</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>REPORT</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."REPORT"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"REPORT_PK" BIGINT DEFAULT NEXT VALUE
+                FOR "PUBLIC"."SYSTEM_SEQUENCE_A3C9B034_3C1E_470F_A750_0B42A2F3E332" NOT NULL NULL_TO_DEFAULT SEQUENCE
+                "PUBLIC"."SYSTEM_SEQUENCE_A3C9B034_3C1E_470F_A750_0B42A2F3E332",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"CATEGORY"
+                VARCHAR(255) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"REPORT_ID" VARCHAR(64) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ACCESS_PK"
+                BIGINT<br>)
+            </td>
+            <td></td>
+            <td>2086</td>
+            <td>335</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>LOCALE_TEXT</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."LOCALE_TEXT"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"LOCALE_TEXT_PK" BIGINT DEFAULT
+                NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_1781418F_5BF2_4F8F_B843_A1AE2B1804B5" NOT NULL NULL_TO_DEFAULT
+                SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_1781418F_5BF2_4F8F_B843_A1AE2B1804B5",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"LOCALE_TEXT"
+                VARCHAR(32768) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"LOCALE_PK" BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"TEXT_ID_PK"
+                BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1883</td>
+            <td>248</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>MANUAL_CONTEST_VOTING</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."MANUAL_CONTEST_VOTING"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"MANUAL_CONTEST_VOTING_PK"
+                BIGINT DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_C4F20D1D_A4DC_44A0_A892_F09BAE0426E1" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_C4F20D1D_A4DC_44A0_A892_F09BAE0426E1",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTINGS"
+                INTEGER NOT NULL CHECK ("VOTINGS" &gt;= 0),<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONTEST_PK" BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"ELECTION_DAY_PK"
+                BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MV_AREA_PK" BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTING_CATEGORY_PK"
+                BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1903</td>
+            <td>252</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>KEY_DOMAIN</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."KEY_DOMAIN"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"KEY_DOMAIN_PK" BIGINT DEFAULT
+                NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_53660504_3521_4171_9430_F97A965C7C4E" NOT NULL NULL_TO_DEFAULT
+                SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_53660504_3521_4171_9430_F97A965C7C4E",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"KEY_DOMAIN_ID"
+                VARCHAR(20) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"KEY_DOMAIN_NAME" VARCHAR(50) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"SYSTEM_WIDE_KEY"
+                BOOLEAN NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1179</td>
+            <td>220</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>VOTING_CATEGORY</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."VOTING_CATEGORY"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTING_CATEGORY_PK" BIGINT
+                DEFAULT NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_F9CD1549_ECF5_45B0_B017_699AEDD251DE" NOT NULL
+                NULL_TO_DEFAULT SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_F9CD1549_ECF5_45B0_B017_699AEDD251DE",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"EARLY_VOTING"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTING_CATEGORY_ID" VARCHAR(4) NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTING_CATEGORY_NAME"
+                VARCHAR(50) NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>1449</td>
+            <td>438</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>DB</td>
+            <td>PUBLIC</td>
+            <td>VOTE_COUNT</td>
+            <td>TABLE</td>
+            <td>MEMORY</td>
+            <td>CREATE MEMORY TABLE "PUBLIC"."VOTE_COUNT"(<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTE_COUNT_PK" BIGINT DEFAULT
+                NEXT VALUE FOR "PUBLIC"."SYSTEM_SEQUENCE_9F04E4D7_3AAF_4644_98FE_5C43204BB410" NOT NULL NULL_TO_DEFAULT
+                SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_9F04E4D7_3AAF_4644_98FE_5C43204BB410",<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATION"
+                VARCHAR(1),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPERATOR" VARCHAR(255),<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_OPLOCK"
+                INTEGER NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"AUDIT_TIMESTAMP" TIMESTAMP,<br>&nbsp;&nbsp;&nbsp;&nbsp;"APPROVED_BALLOTS"
+                INTEGER NOT NULL CHECK ("APPROVED_BALLOTS" &gt;= 0),<br>&nbsp;&nbsp;&nbsp;&nbsp;"BALLOTS_FOR_OTHER_CONTESTS"
+                INTEGER CHECK ("BALLOTS_FOR_OTHER_CONTESTS" &gt;= 0),<br>&nbsp;&nbsp;&nbsp;&nbsp;"EMERGENCY_SPECIAL_COVERS"
+                INTEGER CHECK ("EMERGENCY_SPECIAL_COVERS" &gt;= 0),<br>&nbsp;&nbsp;&nbsp;&nbsp;"FOREIGN_SPECIAL_COVERS"
+                INTEGER CHECK ("FOREIGN_SPECIAL_COVERS" &gt;= 0),<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTE_COUNT_ID" VARCHAR(10)
+                NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"INFO_TEXT" VARCHAR(150),<br>&nbsp;&nbsp;&nbsp;&nbsp;"MANUAL_COUNT"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MODIFIED_BALLOTS_PROCESSED" BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"REJECTED_BALLOTS"
+                INTEGER CHECK ("REJECTED_BALLOTS" &gt;= 0),<br>&nbsp;&nbsp;&nbsp;&nbsp;"REJECTED_BALLOTS_PROCESSED"
+                BOOLEAN NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"SPECIAL_COVERS" INTEGER CHECK ("SPECIAL_COVERS" &gt;=
+                0),<br>&nbsp;&nbsp;&nbsp;&nbsp;"TECHNICAL_VOTINGS" INTEGER CHECK ("TECHNICAL_VOTINGS" &gt;= 0),<br>&nbsp;&nbsp;&nbsp;&nbsp;"CONTEST_REPORT_PK"
+                BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"COUNT_QUALIFIER_PK" BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"MV_AREA_PK"
+                BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"POLLING_DISTRICT_PK" BIGINT,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTE_COUNT_CATEGORY_PK"
+                BIGINT NOT NULL,<br>&nbsp;&nbsp;&nbsp;&nbsp;"VOTE_COUNT_STATUS_PK" BIGINT NOT NULL<br>)
+            </td>
+            <td></td>
+            <td>2249</td>
+            <td>411</td>
+            <td><i>null</i></td>
+            <td>org.h2.mvstore.db.MVTable</td>
+            <td>0</td>
+        </tr>
+        </tbody>
+    </table>
+    (112 rows, 27 ms)<br>
+</div>
