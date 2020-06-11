@@ -1,5 +1,6 @@
 # Outputs
 Couple of saved outputs:
+- ER Diagram: https://hnygard.github.io/eva-admin-spring-boot-hacktogether/database-diagram.png
 - H2 syntax: https://hnygard.github.io/eva-admin-spring-boot-hacktogether/create.sql
 - Postgresql syntax: https://hnygard.github.io/eva-admin-spring-boot-hacktogether/create-postgresql.sql
 - https://hnygard.github.io/eva-admin-spring-boot-hacktogether/tables.html
@@ -20,3 +21,10 @@ Couple of saved outputs:
 - Run `PostgresqlApplication`
 
 Database should now be filled up with tables. The `create-postgresql.sql` contains the create statements.
+
+# Creating ER diagram
+
+
+https://hnygard.github.io/eva-admin-spring-boot-hacktogether/database-diagram.png
+
+The diagram listed above is created with DBeaver connected to PostgreSQL database above.
