@@ -168,7 +168,7 @@
             <!-- Java-implementasjon av krypto-algoritmer -->
             <groupId>org.bouncycastle</groupId>
             <artifactId>bcprov-jdk15on</artifactId>
-            <version>1.60</version>
+            <version>1.67</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
